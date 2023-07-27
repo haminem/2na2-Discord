@@ -14,8 +14,9 @@ import {Translate} from '@modules/hooks/translate/index.js';
 import {ColorPicker} from '@/modules/hooks/colorpicker/index.js';
 import {Divination} from '@modules/hooks/divination/index.js';
 import {Menu} from '@modules/hooks/menu/index.js';
+import { SpreadSheet } from '@modules/hooks/spreadSheet/index.js';
 import {Search} from '@modules/hooks/search/index.js';
-import {EmojiReact} from '@modules/hooks/emoji-react/index.js';
+import { EmojiReact } from '@modules/hooks/emoji-react/index.js';
 
 // スラッシュコマンドあれこれ用
 import {pingCommandSetter, Ping as PingCommand} from '@modules/commands/ping/index.js';
@@ -32,6 +33,7 @@ const hooks: Array<any> = [ // TODO: anyなくす
 	new ColorPicker(),
 	new Divination(),
 	new Menu(),
+	new SpreadSheet(),
 	// streamHook系
 	new Search(),
 	new EmojiReact(),
